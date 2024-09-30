@@ -1,0 +1,128 @@
+/* General body styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f0f2f5;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Heading styling */
+h2 {
+    color: #222;
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+/* Input field styling */
+input {
+    display: block;
+    margin: 12px 0;
+    padding: 12px;
+    width: 100%;
+    max-width: 600px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background-color: #fff;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+input:focus {
+    border-color: #5cb85c;
+    outline: none;
+}
+
+/* Button styling */
+button {
+    padding: 12px 18px;
+    background-color: #5cb85c;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #4cae4c;
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+/* Document list styling */
+#document-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+#document-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    margin: 10px 0;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+#document-list li:hover {
+    transform: scale(1.02);
+}
+
+a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: 500;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Delete button styling */
+.delete-button {
+    background: transparent;
+    border: none;
+    color: red;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: color 0.2s ease;
+}
+
+.delete-button:hover {
+    color: darkred;
+}
+
+/* Message container styling */
+#message-container {
+    margin: 15px 0;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 1rem;
+    width: 100%;
+    max-width: 600px;
+}
+
+.success {
+    background-color: #dff0d8;
+    border: 1px solid #5cb85c;
+    color: #3c763d;
+}
+
+.error {
+    background-color: #f2dede;
+    border: 1px solid #d9534f;
+    color: #a94442;
+}

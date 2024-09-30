@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Family Document Sharing</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="login-form">
+        <h2>Login</h2>
+        <input type="email" id="login-email" placeholder="Email" required>
+        <input type="password" id="login-password" placeholder="Password" required>
+        <button id="login">Login</button>
+        <a href="#" id="toggle-register">Don't have an account? Register</a>
+    </div>
+    
+    <div id="register-form" style="display: none;">
+        <h2>Register</h2>
+        <input type="text" id="register-name" placeholder="Name" required>
+        <input type="email" id="register-email" placeholder="Email" required>
+        <input type="password" id="register-password" placeholder="Password" required>
+        <button id="register">Register</button>
+        <a href="#" id="toggle-login">Already have an account? Login</a>
+    </div>
+    
+    <div id="document-container" style="display: none;">
+        <h2>Your Documents</h2>
+        <input type="file" id="file-upload">
+        <button id="upload">Upload Document</button>
+        <ul id="document-list"></ul>
+    </div>
+    
+    <div id="message-container"></div>
+    
+    <script src="main.js" type="module"></script>
+</body>
+</html>
